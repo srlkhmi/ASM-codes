@@ -14,11 +14,11 @@ global main
 		mov ebx,20
 		add eax,ebx
 		push eax		
-       		push msg
-       		call printf
-       		add esp,4
+       	push msg
+       	call printf
+       	add esp,4
             
-    		leave 
-    		ret
+    	leave 
+    	ret
   
 

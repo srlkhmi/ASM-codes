@@ -11,7 +11,7 @@ main:
 	
 	mov	rdi,msg
 	mov	rax,0		
-        call    printf		
+    call    printf		
 
 		
 
