@@ -1,15 +1,16 @@
-section .text
-  global main
-  extern printf
-  extern scanf
+
+extern printf
+extern scanf
 
 section .data
   message: db "The result is = %d", 10, 0
-  req: db "Enter the number: ", 0
+  req: db "Enter the number: %d", 0
   integer2: times 4 db 0 ; 32-bits integer = 4 bytes
   integer1: times 4 db 0 ; 32-bits integer = 4 bytes
   fmt: db "%d", 0
 
+section .text
+global main
 main:
   ;  Ask for an integer
   push req
